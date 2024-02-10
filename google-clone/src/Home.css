@@ -1,0 +1,132 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.home__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.home__header a {
+    margin-right: 20px;
+    text-decoration: inherit;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+}
+
+.home__header a:hover {
+    text-decoration: underline;
+}
+
+.home__headerRight {
+    display: flex;
+    align-items: center;
+    min-width: 13vw;
+    justify-content: space-between;
+
+}
+
+.home__headerRight>.MuiSvgIcon-root {
+    margin-right: 20px;
+}
+
+.home__body {
+    flex: 1;
+    display: flex;
+    margin-top: 6%;
+    flex-direction: column;
+
+}
+
+.home__body>img {
+    object-fit: contain;
+    height: 150px;
+    /* width: 600px;     */
+    /* background-color: rgb(35, 227, 14); */
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    margin-top: -350px;
+    margin-left: 824px;
+    border-radius: 30px;
+    animation: floatup .5s forwards;
+    /* overflow: hidden; */
+}
+
+.chtbt {
+    display: flex;
+    margin-left: 30px;
+    width: 70px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    padding-top: 17px;
+    margin-top: -50px;
+    margin-left: 370px;
+    border-radius: 100px;
+    border: none;
+    color: rgb(56, 36, 11);
+    background-color: rgb(57, 16, 238);
+    cursor: pointer;
+    box-shadow: 0 0px 1px 1px grey;
+    color: aliceblue;
+}
+
+.chtbt:hover {
+    color: rgb(30, 34, 34);
+    background-color: aqua;
+    border: none;
+    box-shadow: 0 0px 3px 1px rgb(21, 194, 220);
+}
+
+@keyframes floatup {
+    from {
+        transform: translateY(14px);
+        opacity: .0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* mobile view */
+@media only screen and (max-width:600px) {
+    .App {
+        display: flex;
+        flex-direction: column;
+        margin-top: -300px;
+        margin-left: -20px;
+        border-radius: 30px;
+        animation: floatup .5s forwards;
+        /* overflow: hidden; */
+    }
+
+    .chtbt {
+        display: flex;
+        margin-left: 30px;
+        width: 60px;
+        height: 40px;
+        text-align: center;
+        padding: 7px;
+        padding-top: 13px;
+        margin-top: -50px;
+        margin-left: 370px;
+        border-radius: 100px;
+
+
+    }
+
+    #appss {
+        position: relative;
+        height: 200px;
+        width: 00px;
+    }
+}
